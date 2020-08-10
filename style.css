@@ -1,0 +1,86 @@
+#main{
+	width: 99%;
+	height: 98%;
+	position: absolute;
+}
+
+#catroom{
+	width: 300px;
+	height: 300px;
+	position: relative;
+	margin: auto;
+	top: 50%;
+	margin-top: -150px;
+}
+
+.ear{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #e67300;
+	position: absolute;
+}
+
+#left-ear{
+	left: 50px;
+	transform: rotate(-30deg);
+	animation: left-ear-twitch 5s infinite;
+}
+
+#right-ear{
+	left: 220px;
+	transform: rotate(30deg);
+	animation: right-ear-twitch 4s infininte;
+}
+
+#head{
+	width: 230px;
+	height: 220px;
+	background: #cc6600;
+	border-radius: 50%;
+	position: absolute;
+	left: 70px;
+	top: 50px;
+}
+
+.eye{
+	width: 20px;
+	height: 40px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	top: 70px;
+	animation: blink 8s infinite;
+}
+
+#left-eye{
+	left: 70px;
+}
+
+#right-eye{
+	left: 140px;
+}
+
+#nose{
+	width: 30px;
+	height: 20px;
+	background: #ff9966;
+	border-radius: 50%;
+	position: absolute;
+	left: 100px;
+	top: 130px;
+}
+
+#line{
+	width: 3px;
+	height: 20px;
+	background: black;
+	position: absolute;
+	left: 113px;
+	top: 150px;
+}
+
+.mouth-curve{
+	
+}
