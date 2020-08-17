@@ -31,7 +31,7 @@
 #right-ear{
 	left: 220px;
 	transform: rotate(30deg);
-	animation: right-ear-twitch 4s infininte;
+	animation: right-ear-twitch 4s infinite;
 }
 
 #head{
@@ -82,5 +82,76 @@
 }
 
 .mouth-curve{
-	
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 140px;
+}
+
+#curve-left{
+	border-left: 3px solid black;
+	border-right: 3px solid transparent;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid black;
+	left: 70px;
+	transform: rotate(-45deg);
+}
+
+#curve-right{
+	border-left: 3px solid transparent;
+	border-right: 3px solid black;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid black;
+	left: 113px;
+	transform: rotate(45deg);
+}
+
+@keyframes left-ear-twitch{
+	0%, 15%{
+		transform: rotate(-30deg);
+		left: 50px;
+	}
+	20%{
+		transform: rotate(-35deg);
+		left: 50px;
+	}
+	25%, 100%{
+		transform: rotate(-30deg);
+		left: 50px;
+	}
+}
+
+@keyframes right-ear-twitch{
+	0%, 75%{
+		transform: rotate(30deg);
+		left: 220px;
+	}
+	80%{
+		transform: rotate(35deg);
+		left: 225px;
+	}
+	85%, 100%{
+		transform: rotate(30deg);
+		left: 220px;
+	}
+}
+
+@keyframes blink{
+	0%, 45%{
+		height: 40px;
+		top: 70px;
+	}
+	48%{
+		height: 5px;
+		top: 105px;
+	}
+	50%, 100%{
+		height: 40px;
+		top: 70px;
+	}
+}
+
+body{
+	background-color: #778899;
 }
